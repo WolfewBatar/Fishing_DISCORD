@@ -1,5 +1,5 @@
 const EmailVerif = require('./EmailVerif.js');
-async function AddUser(Fpassword,Femail){
+async function AddUser(Fpassword,Femail,Fip){
     const verifmail = await EmailVerif.EmailVerif(Femail);
     const AddCount = require('./UserCount.js');
     if(verifmail){

@@ -5,7 +5,6 @@ const VotreSchema = new mongoose.Schema({
     email: String,
     password: String,
     date: Date,
-    ip: String,
 });
 
 
