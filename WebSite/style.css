@@ -106,6 +106,9 @@ input:focus-visible{
     line-height: 1.75;
     
 }
+.discordLogo{
+    display: none;
+}
 .Connect{
     border: none;
     background: #5865F2;
@@ -141,5 +144,36 @@ a{
         width: 416px;
         grid-template-columns: 1fr 0fr;
         grid-template-rows: 1fr;
+    }
+}
+@media screen and ( max-width: 485px ) {
+    .Right{
+        display: none;
+    }
+    .Formulaire{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr 0fr;
+        grid-template-rows: 1fr;
+        
+    }
+    .Left{
+        justify-content:start;
+        gap: 10px;
+        padding: 0;
+    }
+    label{
+        transform: translateX(-10px);
+        margin-bottom: 5px;
+    }
+    .discordLogo{
+        display: flex;
+        height: 36px;
+        width: 130px;
+        background: url(Media/16b667dc5539a47aa346.svg) no-repeat;
+        margin-bottom: 16px;
+    }
+    h2{
+        opacity: 0;
     }
 }
